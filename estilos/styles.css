@@ -1,0 +1,310 @@
+:root {
+  --color_fondo: #e5e7e9;
+  --blanco: #fff;
+  --color_contenedor: #f7f9f9;
+}
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+h2 {
+  margin-bottom: 40px;
+}
+body {
+  background-color: var(--color_fondo);
+}
+
+.centrar_texto {
+  text-align: center;
+}
+/* Se asignan las medidad de los contenedores de los menus (principal, mostrar informacion, agregar estudio)
+se alinean los items, se le da espacion, etc.
+*/
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* En esta seccion se le da formato al formulario de registro y login, como el borde, fondo, etc.*/
+.formulario {
+  width: 600px;
+  border: 2px solid #ccc;
+  padding: 30px;
+  background: var(--blanco);
+  border-radius: 20px;
+}
+.login {
+  margin-top: 15%;
+}
+
+/* Se da forma a los input de los formularios (estudios, registro, login, informacion usuario) se le coloca un borde,
+se indica en que parte de la pantalla se mostraran los elementos HTML, se le da un margen, etc.
+*/
+
+.inputs_formulario {
+  display: block;
+  border: 2px solid #ccc;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+/* Se les da formato a los label de los formularios, tipo de fuente, color y tamaño*/
+.etiquetas {
+  color: #888;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Se le da estilo a los botones de los formularios (llenado de estudios, mostrar informacion)*/
+
+.boton {
+  float: right;
+  background: #000000;
+  padding: 10px 15px;
+  color: var(--blanco);
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+}
+
+/* Se le da la alteración al boton cuando colocamos el cursos por encima de el  */
+.boton:hover {
+  opacity: 0.7;
+}
+
+/* Se le da estilo a los mensajes de error y successs, estos se muestran en: registro, login y llenado de estudios */
+
+.error {
+  background: #f2dede;
+  color: #a94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.success {
+  background: #d4edda;
+  color: #40754c;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+/* Aqui se desactiva la decoracion de los enlaces a la hora de haberlos visitado */
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.ca {
+  text-decoration: none;
+  color: black;
+}
+
+/* Se da forma a los input de los formularios (estudios, registro, login, informacion usuario) se le coloca un borde,
+se indica en que parte de la pantalla se mostraran los elementos HTML, se le da un margen, etc.
+*/
+
+.contenedor-principal-form {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.contenedor-form {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255, 255, 255 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+  border-radius: 1rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  background-color: rgb(255 255 255);
+}
+
+/* Se le da estilo a los botones de los formularios (login, registro)*/
+
+.boton-form {
+  padding: 1.25rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  text-transform: opercase;
+  font-weight: 700;
+  width: 100%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+/* Se le da la alteración al boton cuando colocamos el cursos por encima de el (login, registro) */
+
+.boton-form:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+/* Estilos FORMULARIO ESTUDIO */
+
+/* Se asignan las medidad de los contenedores de los formularios (registro, login, informacion estudios, 
+agregar estudio) se alinean los items, se le da espacion, etc.
+*/
+
+.contenedor-principal-estudios {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.form-contenedor {
+  width: 35%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* Se le da estilo a cada espacio que contienen un input y un label de los formularios */
+
+.contenedor-label-input {
+  margin-bottom: 1.25rem;
+}
+
+/* En esta seccion se le da formato a los titulos principales de cada estudio y cada tabla que este contenga */
+
+.titulo-estudio {
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Se proporcion color de texto a los label, margen, se indica en donde mostrarse en pantalla */
+
+.label-estudio {
+  margin-bottom: 0.5rem;
+  display: block;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  font-weight: 700;
+}
+
+/* Se da forma a los input de los formularios (estudios, informacion usuario) se le coloca un borde,
+se indica en que parte de la pantalla se mostraran los elementos HTML, se le da un margen, etc.
+*/
+
+.input-estudio {
+  border-width: 1px;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Se indica el borde de la linea de separacion de cada tabla, sel color y el grosor de dicha linea*/
+
+.separacion-tablas {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding: 0.125rem;
+  border-radius: 0.5rem;
+}
+
+/* Estilo barra */
+
+/* Se crean los estilos del contenedor header, se le alinean los items, se les proporciona un tamaño, etc. */
+
+.container-div {
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Se crean los estilos del header, se le alinean los items, se les proporciona una separacion del contenedor, 
+se le asigna un color y se le da efecto de sombra. */
+
+.header-principal {
+  padding: 1.1rem /* 20px */;
+  border-bottom-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  -webkit-box-shadow: 24px 10px 31px 3px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 24px 10px 31px 3px rgba(194, 194, 194, 1);
+  box-shadow: 24px 10px 31px 3px rgba(194, 194, 194, 1);
+  border-radius: 20px;
+}
+
+/* Se le da estilo al titulo principal del header*/
+
+.h1-estilo {
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+  font-weight: 900;
+}
+
+/* Se organiza una barra de navegacion dentro del contenedor */
+
+.barra {
+  display: flex;
+  gap: 0.5rem /* 8px */;
+  align-items: center;
+}
+
+/* Se le da estilos a los enlces de la barra de navegacion */
+
+.nav {
+  text-transform: uppercase;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+
+.span {
+  font-weight: 400;
+}
+
+/* Por ultimo se le da estilo al footer de nuestro sistema, se alinean los item , se les da un color, 
+transforma el texto en mayusculas, etc. */ 
+
+.footer {
+  margin-top: 2.5rem /* 40px */;
+  text-align: center;
+  padding: 1.25rem /* 20px */;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  font-weight: bold;
+  text-transform: uppercase;
+}
