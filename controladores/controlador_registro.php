@@ -72,7 +72,29 @@ if (isset($_POST['nombre']) && isset($_POST['apellidop']) && isset($_POST['apell
     exit();
   }
 
-  $funcion -> validar_clave($Contrasena);
+   // Permite la validacion de la contraseña insertada, comprobando que tenga una letra mayuscula, minuscula y numeros.
+   function validar_clave($Contrasena){
+    if (!preg_match('`[a-z]`',$Contrasena)){
+       header("Location: ../informacion_general_usuario/registro.php?error=La contraseña debe contener minusculas&$user_data");
+     exit();
+    }
+    if (!preg_match('`[A-Z]`',$Contrasena)){
+       header("Location: ../informacion_general_usuario/registro.php?error=La contraseña debe contener MAYUSCULAS&$user_data");
+     exit();
+    }
+    if (!preg_match('`[0-9]`',$Contrasena)){
+       header("Location: ../informacion_general_usuario/registro.php?error=La contraseña debe contener numeros&$user_data");
+     exit();
+    }
+    return true;
+ }
+ 
+ if ($_POST){
+    if (validar_clave($_POST["contrasena"])){
+      
+    }
+ }
+   
  
   
 
